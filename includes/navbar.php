@@ -18,33 +18,15 @@
 <div class="menu_overlay open" >
 		<div class="top_bar">
 		
-			<div class="profile_img" style="background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png);"></div>
+			<div class="profile_img" style="background-image: url(https://pbs.twimg.com/profile_images/932986247642939392/CDq_0Vcw_400x400.jpg);"></div>
 			<div class="user_data">
-				<a href="javascript:void(0)"><h5>Login to Quiz Portal</h5></a>
+				<a href="javascript:void(0)"><h5>SHADABZONE</h5></a>
 			</div>
 		<span class="close_bar" id="close_menu"></span> 
 	</div>
 
 	<div class="bottom_bar" id="hide_when_click_on_link">
 		<ul class="qp_all_list">
-		<!-- login and signup  -->
-		<a href="javascript:void(0)">
-			<li>
-				<div id="icon_label">
-					<div class="icon_img" style="background-image: url(https://img.pngio.com/user-profile-avatar-login-account-svg-png-icon-free-download-login-icon-png-980_982.png);"></div>
-				</div>
-				<div class="text_label">
-					<h5>Sign in with Google</h5>
-					<small>Lorem, ipsum dolor sit amet consectetur</small>
-				</div>
-				<div id="arrow_label">
-					<i class="fa fa-angle-right"></i>
-				</div>
-			</li>			
-	   </a>
-
-			<hr>
-
 		  <a href="javascript:void(0)"  id="subjects_sidebar">
 			<li>
 				<div id="icon_label">
@@ -76,6 +58,23 @@
 			</li>
 		   </a>
 
+
+		    <a href="javascript:void(0)" id="Question_sidebar">
+				<li>
+					<div id="icon_label">
+						<div class="icon_img" style="background-image: url(https://images.vexels.com/media/users/3/157346/isolated/preview/25829f6b8d6ca72aee817a8448ab7024-flat-open-book-icon-by-vexels.png);"></div>
+					</div>
+					<div class="text_label">
+						<h5>Question Papers</h5>
+						<small>Lorem, ipsum dolor sit amet consectetur</small>
+					</div>
+					<div id="arrow_label">
+						<i class="fa fa-angle-right"></i>
+					</div>
+				</li>
+	   		</a>
+
+
 			<a href="javascript:void(0)" id="setting_sidebar">
 			<li>
 				<div id="icon_label">
@@ -91,21 +90,6 @@
 			</li>
 		   </a>
 
-		    <a href="javascript:void(0)" id="Question_sidebar">
-				<li>
-					<div id="icon_label">
-						<div class="icon_img" style="background-image: url(https://www.pngitem.com/pimgs/m/62-622830_png-books-black-and-white-book-logo-transparent.png);"></div>
-					</div>
-					<div class="text_label">
-						<h5>Question Papers</h5>
-						<small>Lorem, ipsum dolor sit amet consectetur</small>
-					</div>
-					<div id="arrow_label">
-						<i class="fa fa-angle-right"></i>
-					</div>
-				</li>
-	   		</a>
-
 			<a href="javascript:void(0)" >
 			<li>
 				<div id="icon_label">
@@ -114,9 +98,6 @@
 				<div class="text_label">
 					<h5 style="position: absolute;top: 10%;">Logout</h5>
 					<small>&nbsp;<!-- Lorem, ipsum dolor sit amet consectetur --></small>
-				</div>
-				<div id="arrow_label">
-					<i class="fa fa-angle-right"></i>
 				</div>
 			</li>
 		   </a>
@@ -146,6 +127,28 @@
 				<a href="javascript:void(0)" id="back_setting"><i class="fa fa-angle-left"></i></a>
 				<h5>Setting</h5>
 			</div>	
+
+			<!-- setting sidebar menu -->
+			<ul>
+				<li>
+					<div id="icon_label">
+						<div class="icon_img" id="change_theme_img" style="background-image: url(https://www.iconfinder.com/data/icons/canoopi-mobile-contact-apps/32/Light_Theme-512.png);"></div>
+					</div>
+					<div class="text_label">
+						<h5>Theme</h5>
+						<small>Your are Using Light Theme</small>
+					</div>
+					<div id="arrow_label">
+						<div class="onoffswitch">
+						    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" >
+						    <label class="onoffswitch-label" for="myonoffswitch">
+						        <span class="onoffswitch-inner"></span>
+						        <span class="onoffswitch-switch"></span>
+						    </label>
+						</div>
+					</div>
+				</li>
+			</ul>
 		 </div>
 
 		 <!-- Question -->

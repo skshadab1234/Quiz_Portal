@@ -7,7 +7,6 @@
 	<!-- mobile devices -->
 
 	<div class="hero-mobile">
-		
 		<!-- navbar -->
 		<?php require 'includes/navbar.php'; ?>
 
@@ -16,7 +15,7 @@
 		  <div class="swiper-container swiper1"></div>
 		  <!-- swiper2 -->
 		  <div class="swiper-container swiper2"></div>
-		  asasaasasasasadsfdfsadasdasdsadasds
+		  Mobile View
 
 		</div>
 	</div> <!-- end mobile view -->
@@ -25,6 +24,5 @@
 	<div class="desktop_view">
 		Desktop
 	</div>
-	<?php require "includes/change_url_script.php" ?>
 </body>
 </html>
