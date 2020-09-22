@@ -61,7 +61,7 @@ li {
 	list-style-type: none;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 767px) {
 	.hero-mobile
 	{
 		display: none;
@@ -72,7 +72,7 @@ li {
 }
 
 	/*Mobile View*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
 	.desktop_view
 	{
 		display: none;
@@ -211,54 +211,81 @@ li {
 	}
 
 	.search_bar {
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		position: absolute;
 		left: 0;
 		top: 0;
-		background-color: var(--second-color);
+		background: #fff;
 		clip-path: circle(0 at 91% 5%);
 		-webkit-clip-path: circle(0 at 91% 5%);
-		transition: all 2s ease-in-out;
+		transition: all .5s ease-in-out;
 		z-index: 99999999;
-		visibility: visible;
 		opacity: 1;
-		overflow: hidden;
 	}
-	.search_bar.open {
 
+	.search_bar.open 
+	{
 		clip-path: circle(300% at 80% 0%);
 		-webkit-clip-path: circle(300% at 80% 0%);
 	}
-
 	
+	.search_bar .bottom_bar
+	{
+		width: 100vw;
+		height: 100%;
+		position: relative;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+
+	.search_bar .bottom_bar .first_div
+	{
+		width: 100vw;
+		margin: 20px;
+		display: flex;
+		position: relative;
+	}
+	.search_bar .bottom_bar .first_div
+	{
+		font-size: 30px;
+		font-weight: bolder;
+	}
+	.search_bar .bottom_bar .first_div h5
+	{
+		position: absolute;
+		left: 20px;
+		top: 2px
+	}
+
 	.close_bar::before,
 	.close_bar::after {
 		content: '';
 		position: absolute;
-		top: 44%;
+		top: 50%;
 		right: 15%;
+		transform: translate(-50%,-50%);
 		width: 25px;
 		height: 2px;
 		background: #fff;
 		transition: all .5s ease-in-out;
 	}
 	/* ANIMATION */
-	.close_bar {
-		flex-basis: 30%;
+	.close_bar 
+	{
 		background: transparent;
 		box-shadow: none;
 		z-index: 1;
 	}
-	.close_bar::before {
+
+	.close_bar::before 
+	{
 		transform: rotate(45deg) translate(35px, -35px);
 	}
-	.close_bar::after {
+
+	.close_bar::after 
+	{
 		transform: rotate(-45deg) translate(35px, 35px);
-	}
-	.content {
-		width: 100vw;
-		height: 100%;
 	}
 
 	/*menu overlay*/
@@ -356,7 +383,7 @@ li {
 		height: auto;
 		position: absolute;
 		top: 0;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
 
 	.Ranking_sidebar_show.slide_to_right
@@ -367,7 +394,7 @@ li {
 	.Ranking_sidebar_show.slide_to_right_show
 	{
 		transition: .5s ease-in-out all;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
 
 
@@ -380,7 +407,7 @@ li {
 		height: 500px;
 		position: absolute;
 		top: 0;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
 
 	.subject_sidebar_show.slide_to_right
@@ -392,10 +419,8 @@ li {
 	.subject_sidebar_show.slide_to_right_show
 	{
 		transition: .5s ease-in-out all;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
-
-	/*Subject Sidebar End */
 
 	 .sidebar_top
 	{
@@ -418,17 +443,16 @@ li {
 		font-size: 14px
 	}
 
-
-
+	/*Subject Sidebar End */
+	
 	/*SETTING Sidebar START*/
-
 	.setting_sidebar_show
 	{
 		width: 100vw;
 		height: auto;
 		position: absolute;
 		top: 0;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
 
 	.setting_sidebar_show.slide_to_right
@@ -440,10 +464,8 @@ li {
 	.setting_sidebar_show.slide_to_right_show
 	{
 		transition: .5s ease-in-out all;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
-
-
 	/*SETTING Sidebar End*/
 
 	/*Question Sidebar START*/
@@ -454,7 +476,7 @@ li {
 		height: auto;
 		position: absolute;
 		top: 0;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
 
 	.Question_sidebar_show.slide_to_right
@@ -466,10 +488,10 @@ li {
 	.Question_sidebar_show.slide_to_right_show
 	{
 		transition: .5s ease-in-out all;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
 
-	/*SETTING Sidebar End*/
+	/*Question Sidebar End*/
 	
 	.menu_overlay .bottom_bar ul.qp_all_list
 	{
@@ -482,7 +504,7 @@ li {
 	{
 		animation: slide_to_left .9s linear 1;
 		transition: .5s all ease-in-out;
-		transform: translateX(-500px);
+		transform: translateX(-767px);
 	}
 
 	.menu_overlay .bottom_bar .qp_all_list.slide_to_left_show
@@ -505,7 +527,7 @@ li {
 		}
 		100%
 		{
-			transform: translateX(-500px);
+			transform: translateX(-767px);
 			opacity: 0
 		}
 	}
@@ -526,13 +548,13 @@ li {
 		}
 	}
 
-	.menu_overlay .bottom_bar ul.qp_all_list a, .setting_sidebar_show ul a
+	.menu_overlay .bottom_bar ul.qp_all_list a, .setting_sidebar_show ul a,.subject_sidebar_show a
 	{
 		color: #343a40;
 		font-size: 15px;
 	}
 
-	.menu_overlay .bottom_bar ul.qp_all_list li, .setting_sidebar_show ul li
+	.menu_overlay .bottom_bar ul.qp_all_list li, .setting_sidebar_show ul li,.subject_sidebar_show ul li
 	{
 		display: flex;
 		padding: 5px 15px;
@@ -624,29 +646,37 @@ li {
 	}
 
 	/*oN OFF sWITCH DARK TO LIGHT */
-	.onoffswitch {
-    position: relative; width: 77px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	.onoffswitch 
+	{
+	    position: relative; 
+	    width: 77px;
+	    -webkit-user-select:none; 
+	    -moz-user-select:none; 
+	    -ms-user-select: none;
 	}
-	.onoffswitch-checkbox {
+	.onoffswitch-checkbox 
+	{
 	    position: absolute;
 	    opacity: 0;
 	    pointer-events: none;
 	}
-	.onoffswitch-label {
+	.onoffswitch-label 
+	{
 	    display: block; 
 	    overflow: hidden; 
 	    cursor: pointer;
 	    border: 2px solid #121212; 
 	    border-radius: 20px;
 	}
-	.onoffswitch-inner {
+	.onoffswitch-inner 
+	{
 	    display: block;
 	    width: 200%;
 	    margin-left: -100%;
 	    transition: margin 0.3s ease-in 0s;
 	}
-	.onoffswitch-inner:before, .onoffswitch-inner:after {
+	.onoffswitch-inner:before, .onoffswitch-inner:after 
+	{
 	    display: block; 
 	    float: left;
 	     width: 50%;
@@ -659,18 +689,21 @@ li {
 	     font-weight: bold;
 	    box-sizing: border-box;
 	}
-	.onoffswitch-inner:after {
+	.onoffswitch-inner:after 
+	{
 	    content: "Light";
 	    padding-right: 10px;
 	    background-color: #FFFFFF; color: #121212;
 	    text-align: right;
 	}
-	.onoffswitch-inner:before {
+	.onoffswitch-inner:before 
+	{
 	    content: "Dark";
 	    padding-left: 10px;
 	    background-color: #121212; color: #fff;
 	}
-	.onoffswitch-switch {
+	.onoffswitch-switch 
+	{
 	    display: block;
 	    width: 8px; 
 	    margin: 10px;
@@ -683,4 +716,9 @@ li {
 	    transition: all 0.3s ease-in 0s; 
 	}
 
+	.content 
+	{
+		width: 100vw;
+		height: 100%;
+	}
 }

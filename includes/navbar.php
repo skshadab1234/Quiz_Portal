@@ -15,7 +15,7 @@
 
 <!-- menu overlay -->
 
-<div class="menu_overlay open" >
+<div class="menu_overlay">
 		<div class="top_bar">
 		
 			<div class="profile_img" style="background-image: url(https://pbs.twimg.com/profile_images/932986247642939392/CDq_0Vcw_400x400.jpg);"></div>
@@ -111,6 +111,54 @@
 					<a href="javascript:void(0)" id="back_subject"><i class="fa fa-angle-left"></i></a>
 					<h5>Subjects</h5>
 				</div>
+				<!-- all subject listt -->
+				<!-- setting sidebar menu -->
+			<ul>
+				<a href="javascript:void(0)">
+					<li>
+						<div id="icon_label">
+							<div class="icon_img" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Python_icon_%28black_and_white%29.svg/768px-Python_icon_%28black_and_white%29.svg.png);"></div>
+						</div>
+						<div class="text_label">
+							<h5>Python</h5>
+							<small>Latest 10 quiz added</small>
+						</div>
+						<div id="arrow_label">
+							<i class="fa fa-angle-right"></i>
+						</div>
+					</li>
+				</a>
+
+				<a href="javascript:void(0)">
+					<li>
+						<div id="icon_label">
+							<div class="icon_img" style="background-image: url(https://cdn.iconscout.com/icon/free/png-256/php-76-555548.png);"></div>
+						</div>
+						<div class="text_label">
+							<h5>PHP</h5>
+							<small>Latest 10 quiz added</small>
+						</div>
+						<div id="arrow_label">
+							<i class="fa fa-angle-right"></i>
+						</div>
+					</li>
+				</a>
+
+				<a href="javascript:void(0)">
+					<li>
+						<div id="icon_label">
+							<div class="icon_img" style="background-image: url(https://www.pngkey.com/png/full/223-2231175_java-svg-png-icon-free-download-java-enterprise.png);"></div>
+						</div>
+						<div class="text_label">
+							<h5>Java</h5>
+							<small>Latest 10 quiz added</small>
+						</div>
+						<div id="arrow_label">
+							<i class="fa fa-angle-right"></i>
+						</div>
+					</li>
+				</a>
+			</ul>
 		 </div>
 
 		 <!-- Ranking Sidebar -->
@@ -172,7 +220,13 @@
 
 
 <!-- overlay search system -->
-	<div  class="search_bar" >
-		<span class="close_bar"></span> 
+	<div  class="search_bar open" >
+			<div class="bottom_bar">
+				<div class="first_div">
+					<i class="fa fa-angle-left" id="close_search"></i>
+					<h5>Search</h5>
+				</div>
+			</div>				
+
 	</div>
 

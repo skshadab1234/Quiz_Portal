@@ -6,10 +6,10 @@ $("#search_bar").click( () => {
   $(".close_bar").removeClass('animate_cart_icon_hide');
 });
   
-$(".close_bar").click( () => {
-  $("#cart_list").addClass('animate_cart_icon_hide');
+$("#close_search").click( () => {
+  $("#search_bar").addClass('animate_cart_icon_hide');
   $(".search_bar").removeClass('open');
-  $("#cart_list").removeClass('animate_cart_icon_show');
+  $("#search_bar").removeClass('animate_cart_icon_show');
 });
 
 $("#menu_bar").click( () => {
@@ -130,6 +130,9 @@ $("#myonoffswitch").change(()=>{
 
     // Inverting the image on Light Theme
     $(".icon_img").css("filter","invert(0%");
+
+    // search bar theme to Light
+    $(".search_bar").css({"background":"#fff","color":"#000"})
   }
 
   // Dark Theme
@@ -166,9 +169,12 @@ $("#myonoffswitch").change(()=>{
     $("#change_theme_img").css("background-image","url(https://static.thenounproject.com/png/2853798-200.png)");
 
     //Enabling transition afetr all the effect done
-     setTimeout( function(){
-      $('.menu_overlay').css("transition",".5s ease-in-out");
-       },1000);
+    setTimeout( function(){
+    $('.menu_overlay').css("transition",".5s ease-in-out");
+     },1000);
+
+    // search bar theme to dark
+    $(".search_bar").css({"background":"#121212","color":"#fff"})
   }
 }
 
